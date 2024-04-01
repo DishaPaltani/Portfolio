@@ -111,34 +111,22 @@
       margin-right: 20px;
     }
 
-    .hamburger {
-      display: none;
-    }
+  
+    
 
 
-
-    @media all and (min-width : 150px) and (max-width: 768px) {
-      .hamburger {
-        font-size: 40px;
-        display: block;
-        position: absolute;
-        /* Position absolutely within the nav */
-        left: 10px;
-        /* Adjust as needed */
-        top: 10px;
-        cursor: pointer;
+   /* for mobile responsiveness */
+    @media all and  (max-width: 700px) {
+      *{
+        padding: 0;
+        margin: 0;
       }
+     
+   
 
-      nav>a {
-        display: none;
-      }
-
-      nav {
-        position: relative;
-        /* Ensure relative positioning for absolute child */
-      }
+      
      div>img {
-        height: 250px;
+        height: 200px;
         width: 100%;
       }
       #center-main{
@@ -151,15 +139,17 @@
         text-align: center;
     }
     #heading{
-      font-size: 20px;
+      font-size: 15px;
       margin-top: -1px;
       margin-top: 10px;
     }
     #cards{
       display: block;
+      background-color: white;
+
     }
   .card {
-     margin-left: 150px;
+     margin-left: 20px;
      height: 250px;
      width: 250px;
      margin-top: -10px;
@@ -169,9 +159,37 @@
     width: 200px;
 
   }
+  #reserach{
+    font-size: 20px;
+    text-align: start !important;
+    margin-left: 10px;
+  }
+  #description-text{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
     
   }
-     
+  #recent-updates{
+    font-size: 15px;
+    text-align:  start !important;
+    margin-left: 10px;
+
+  }
+  nav{
+    gap: 10px;
+  }
+  nav>a{
+    font-size: 12px;
+   
+  }
+ } 
+
+
+ 
+  
+ 
+    
+   
   </style>
 </head>
 
@@ -182,14 +200,14 @@
   <!-- Nav Bar and all profile links -->
 
   <nav>
-    <i style="color:white;margin-top: -7px; margin-left: -1px;" class="fa-solid fa-bars hamburger"></i>
+    <!-- <i style="color:white;margin-top: -7px; margin-left: -1px;" class="fa-solid fa-bars hamburger"></i> -->
     <a href="./index.html">Profile</a>
-    <a href="./education.html">Educational Background</a>
+    <a href="./education.html">Academics</a>
     <a href="./publication.html">Publication</a>
     <a href="./STTP.html">Participation/STTP</a>
+</nav>
 
 
-  </nav>
   <!-- Image Banner of home Page -->
   <div>
     <img src="https://img.freepik.com/premium-photo/laptop-top-stack-upon-stack-books_674594-15500.jpg" alt="Banner">
@@ -237,13 +255,13 @@
   <h4 id="reserach" style="text-align: center; margin-top: 30px;font-family:sans-serif;"><b
       style="color: brown;font-family:sans-serif;">Research Area: </b>Approximation Theory, Special Function, Umbral
     Calculus, Symbolic Computation</h4>
-  <p style="text-align: justify;margin-left: 100px; margin-right: 100px;margin-top: 30px;font-family:sans-serif;">Manoj
+  <p id="description-text" style="text-align: justify;margin-left: 100px; margin-right: 100px;margin-top: 30px;font-family:sans-serif;">Manoj
     Kumar is working as a Research Scholar under the guidance of Dr. Nusrat Raza in the Department of Mathematics, at
     Aligarh Muslim University, Aligarh, India. He is working in Approximation Theory (by using Positive Linear Operators
     for approximating the functions).
     His current area of research is Unravelling the role of certain special functions in advancing approximation theory.
   </p>
-  <h4 style="text-align: center;">Recent Updates: <a
+  <h4 id="recent-updates" style="text-align: center;">Recent Updates: <a
       href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=34SQdY8AAAAJ&citation_for_view=34SQdY8AAAAJ:0EnyYjriUFMC"
       target="_blank">Approximation with Szász-Chlodowsky operators employing general-Appell polynomials</a></h4>
 
@@ -259,12 +277,7 @@
     <a href="https://www.researchgate.net/profile/Manoj-Kumar-175" target="_blank">
       <i class="fab fa-researchgate"></i></a>
   </footer>
-
-
-
-
-
-  <script src="./index.js"></script>
+<script src="./index.js"></script>
 
 </body>
 

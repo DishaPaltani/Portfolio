@@ -83,13 +83,73 @@
     margin-top: 20px;
     margin-right: 20px;
   }
+
+  @media all and (max-width: 700px) {
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    div>img {
+      height: 200px;
+      width: 100%;
+    }
+
+    nav {
+      gap: 10px;
+    }
+
+    nav>a {
+      font-size: 12px;
+
+    }
+    #description{
+      margin-top: 10px !important;
+    }
+    #description>div>a{
+    font-size: 15px;
+    }
+    #phdOverview{
+      margin-top: 20px;
+    }
+    #phdOverview>p{
+      font-size: 15px;
+      margin-top: 10px;
+      text-align: start !important;
+      margin-left: 10px;
+    }
+    #other-exam{
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    #exams{
+      display: block;
+    }
+    .icon>img {
+    height: 100px;
+    width: 100px;
+    margin-left: 90px;
+}
+.text{
+  font-size: 15px;
+  margin-left: 10px;
+}
+hr{
+  margin-top: 2px !important;
+}
+    
+
+
+
+
+  }
 </style>
 
 <body>
   <!-- Nav Bar and all profile links -->
   <nav>
     <a href="./index.html">Profile</a>
-    <a href="./education.html">Educational Background</a>
+    <a href="./education.html">Academics</a>
     <a href="./publication.html">Publication</a>
     <a href="./STTP.html">Participation/STTP</a>
   </nav>
@@ -117,22 +177,22 @@
           href="https://www.amu.ac.in/faculty/womens-college/nusrat-raza"
           target="_blank">https://www.amu.ac.in/faculty/womens-college/nusrat-raza</a></p>
     </div>
-    <h2 style="text-align: center; font-family: sans-serif;">Other Exams Qualified:</h2>
+    <h2 id="other-exam" style="text-align: center; font-family: sans-serif;">Other Exams Qualified:</h2>
     <div id="exams">
       <div class="card icon" style="width: 18rem;">
         <img src="./medal.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text" style="font-family: sans-serif;"><b>Graduate Aptitude Test in Engineering (GATE),
+          <p class="card-text text" style="font-family: sans-serif;"><b>Graduate Aptitude Test in Engineering (GATE),
               Mathematics (AIR-446, 2021).</b></p>
 
         </div>
       </div>
 
       <div class="card icon" style="width: 18rem;">
-        <img src="./cup.jpg" class="card-img-top" alt="..." style="margin-left: 30px;">
+        <img src="./cup.jpg" class="card-img-top" alt="..." >
         <div class="card-body">
 
-          <p class="card-text" style="font-family: sans-serif;"><b>SNPTEL Course on Scientific Computing using Matlab,
+          <p class="card-text text" style="font-family: sans-serif;"><b>SNPTEL Course on Scientific Computing using Matlab,
               NPTEL (IITM), 2020.</b></p>
 
         </div>
@@ -142,7 +202,7 @@
         <img src="./manwithcap.webp" class="card-img-top" alt="...">
         <div class="card-body">
 
-          <p class="card-text" style="font-family: sans-serif;"><b>IIT-JAM in Mathematics (AIR-937, 2017)</b></p>
+          <p class="card-text text" style="font-family: sans-serif;"><b>IIT-JAM in Mathematics (AIR-937, 2017)</b></p>
 
         </div>
       </div>
